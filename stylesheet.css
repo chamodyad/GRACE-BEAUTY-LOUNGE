@@ -1,0 +1,297 @@
+/* 
+Author: Chamodya
+Date: 18 09 2024
+Version: one
+*/
+
+/*
+COLOURS
+#7d550a - dark gold for headings
+#d8a926 - gold
+#fffffd - background white
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700&display=swap');
+
+/* GLOBAL STYLES
+---------------------------------------- */
+
+body {
+    font-size: 16px;
+    font-weight: 400; /* Regular font weight */
+    font-family: 'Montserrat', sans-serif; /* Body text font */
+    color: #000000; /* Black text */
+    background-color: #fffdf8; /* Light white background */
+    margin: 0;
+    padding: 0;
+    padding-left:0px;
+}
+
+/* Heading Styles */
+h1 {
+    color: #7D550A; /* Gold color */
+    font-family: 'Playfair Display', serif; /* Playfair for main heading */
+    font-size: 3em; 
+    font-weight: 700; 
+}
+
+h2 {
+    color: #7D550A; /* Gold color */
+    font-family: 'Playfair Display', serif; /* Playfair Display for subheading */
+    font-size: 2em; 
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550; /
+}
+
+a{ 
+    color:#ffffff;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1em;
+    font-weight:500;
+}
+
+a:visited { 
+    color:#ffffff;
+}
+/* HEADER
+----------------------------------------*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #000000;
+    padding: 10px 0; 
+    margin: 0; 
+    width: 100%; 
+    padding-left: 15px;
+    
+}
+nav {
+    margin-right:auto;
+    padding:10px 0;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px; 
+}
+
+nav a {
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 650;
+
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for effect */
+}
+
+/* BUTTON STYLES
+---------------------------------------- */
+.button {
+    background-color: #d8a926; /* Gold background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    font-family: 'Montserrat', sans-serif; /* Montserrat for button text */
+    font-weight: 700; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #7d550a; /* Dark gold on hover */
+}
+
+/* content
+---------------------------------------- */
+.wrapper {
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+.sesali-bridal {
+    display: block; /* Ensures no extra space below the image */
+    margin-left: auto; /* Automatically set left margin */
+    margin-right: 0; /* No right margin */
+    max-width: 100%; /* Responsive sizing */
+    height: auto; /* Keep the aspect ratio */
+    border: 5px solid #d8a926;
+    border-radius: 10px;
+   
+}
+.flex-container {
+    display: flex; /* Enable flexbox */
+    align-items: flex-start; /* Align items at the start of the container */
+}
+
+.content {
+    margin-left: 20px; /* Add space between the image and the content */
+    flex: 1; /* Allow the content to grow and fill the space */
+}
+/* image-about
+---------------------------------------- */
+.image-about {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-between; /* Space out the images */
+    margin: 20px 0; /* Optional: Adds space above and below the gallery */
+}
+
+.image-about img {
+    width: calc(25% - 10px); /* Makes each image take 25% width minus some margin */
+    margin-bottom: 10px; /* Space between rows */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #d8a926; /* Optional: add a border */
+    border-radius: 8px; /* Optional: round corners */
+}
+
+/* footer
+---------------------------------------- */
+footer {
+    background-color: #000000;
+    color: #ffffff; 
+    padding: 20px; 
+    font-size: 14px; 
+    flex: 100%;
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+.footer-left {
+    flex: 1; 
+    text-align: left; 
+}
+
+.footer-center {
+    flex: 2; 
+    text-align: center; 
+}
+
+.footer-right {
+    flex: 1; 
+    text-align: right;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.footer a:hover {
+    color: #d8a926; 
+}
+
+.social-media {
+    display: flex; 
+    justify-content: center;
+    margin-top: 5px; 
+}
+
+.footer img {
+    vertical-align: middle; 
+    margin-left: 10px;
+}
+
+
+.team-container {
+    display: flex; 
+    align-items: center; 
+    margin: 20px 0;
+    margin-left:15px;
+}
+
+.team-container h1 {
+    text-align: center;
+    margin-right: 20px; 
+    margin: 0;
+    flex: 0 0 auto;
+    padding-right:315px;
+}
+
+figure {
+    margin: 0 20px;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px; 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500; 
+    color: #7D550A; 
+}
+
+.team-pic, .team-image {
+    border: 8px solid #d8a926; 
+    border-width: 7px; 
+    width: 185px;
+    height: auto;
+ 
+}
+/* HAIR & BEAUTY
+---------------------------------------- */
+.price-container {
+    display: flex;             
+    flex-wrap: wrap;          
+    justify-content: space-around; 
+    margin: 20px 0;          
+}
+
+.price-section {
+    flex: 1 1 300px;          
+    margin: 10px;             
+    border: 1px solid #ddd;   
+    padding: 15px;            
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: left;       
+}
+
+.price-section table {
+    width: 100%;              
+    margin-top: 10px;        
+}
+
+.price-section td {
+    padding: 3px;            
+}
+
+/* view more
+---------------------------------------- */
+.view-more {
+    display: block;                   
+    margin: 20px auto;               
+    text-align: center;               
+    color: #000000;                   
+    font-size: 1.2em;                 
+    text-decoration: none;          
+}
+
+/* contact us
+---------------------------------------- */
+.contact-us {
+  display: block;                   
+    margin: 20px auto;               
+    text-align: left;               
+    color: #000000;                   
+    font-size: 1.2em;                 
+    text-decoration:underline;   
